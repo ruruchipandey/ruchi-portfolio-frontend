@@ -29,9 +29,9 @@
           <div class="profile-headline">Software Engineer &bull; M.Tech. Thermal Engineering, IIT Delhi</div>
         </div>
 
-        <a href="assets/Resume.pdf" download="Ruchi_Pandey_Resume.pdf" class="btn-print" title="Download Resume PDF">
+        <button id="open-preview-btn" class="btn-print" type="button" onclick="openResumePreview()" aria-haspopup="dialog" aria-controls="pdf-modal">
           Print Resume
-        </a>
+        </button>
       </div>
 
       <!-- Contact Bar -->
@@ -281,5 +281,26 @@
 
   </div>
 
+  <!-- PDF Preview Modal -->
+  <div id="pdf-modal" class="pdf-modal-backdrop" aria-hidden="true" onclick="if(event.target === this) closeResumePreview()">
+    <div class="pdf-modal-content" role="dialog" aria-modal="true" aria-labelledby="pdf-modal-title">
+      <div class="pdf-modal-header">
+        <div id="pdf-modal-title" class="pdf-modal-title">Resume Preview</div>
+        <div class="pdf-modal-actions">
+          <a href="assets/Resume.pdf" download="Ruchi_Pandey_Resume.pdf" class="btn-print" id="modal-download-btn">
+            Download Resume
+          </a>
+          <button type="button" class="btn-close-modal" id="modal-close-btn" onclick="closeResumePreview()" aria-label="Close preview">
+            &times;
+          </button>
+        </div>
+      </div>
+      <div class="pdf-modal-body">
+        <iframe id="pdf-iframe" src="assets/Resume.pdf" type="application/pdf" title="Resume PDF Preview"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
 </body>
 </html>

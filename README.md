@@ -1,13 +1,13 @@
 # Ruchi Pandey — Software Engineer Portfolio
 
-A minimal, monochromatic black-and-white portfolio and digital resume for **Ruchi Pandey** (Software Engineer & M.Tech scholar at IIT Delhi). Built with zero-dependency semantic HTML and CSS, designed for high contrast, fast loading, and easy scanning by engineering recruiters and hiring managers.
+A minimalist, box-structured portfolio and digital resume for **Ruchi Pandey** (Software Engineer & M.Tech scholar at IIT Delhi). Built with lightweight semantic HTML, CSS, and vanilla JS for fast loading and clear visual text separation.
 
 ## 🚀 How to Host on GitHub Pages
 
 1. **Commit and push your changes:**
    ```bash
    git add .
-   git commit -m "feat: monochromatic dark minimal portfolio"
+   git commit -m "feat: resume preview modal with auto download"
    git push origin main
    ```
 
@@ -22,13 +22,15 @@ A minimal, monochromatic black-and-white portfolio and digital resume for **Ruch
    `https://ruruchipandey.github.io/ruchi-portfolio-frontend/`
 
 ## 📄 Structure & Features
-- **Always Monochromatic Dark:** Pure black background (`#000000`) with high-contrast white text and subtle charcoal card borders.
-- **Header & Print Action:** Direct contact bar (Location, Email, Phone, GitHub) and a clean **Print Resume** button (`window.print()`).
-- **No Divider Lines:** Clean whitespace separation without horizontal borders across section headings.
+- **Color Theme:** Soft slate-gray background with the lightest pastel pink accents and creamy text.
+- **Boxed Layout:** Every section and entry is contained in its own box for high-contrast visual separation.
+- **Resume Preview & Auto-Download:**
+  - Clicking **Print Resume** opens a clean, full-screen PDF preview modal.
+  - Automatically initiates the download of `Ruchi_Pandey_Resume.pdf` after displaying the preview (with a direct "Download PDF" button for manual saving).
 - **Sections:**
-  - **About:** Summary detailing IIT Delhi M.Tech admission, GATE 2026 score (556), Department Rank 2 (CGPA 8.44/10), and technical specializations.
+  - **About:** Direct summary of IIT Delhi M.Tech, GATE 2026 score (556), GBPUAT Rank 2 (CGPA 8.44/10), and technical specializations.
   - **Education:** IIT Delhi and GBPUAT.
-  - **Technical Skills:** Structured table (Languages, AI/LLM, Agentic Systems, Backend, Databases, Data/Math, Tools).
+  - **Technical Skills:** Structured grid (Languages, AI/LLM, Agentic Systems, Backend, Databases, Data/Math, Tools).
   - **Software Projects:** LLM Discord Bot, Automated TA Attendance Tracker, Python Computational Fluid Mechanics.
-  - **Experience:** Teaching Assistantship and Design Thinking Workshop.
+  - **Experience:** Teaching Assistant at IIT Delhi and Design Thinking Workshop.
   - **Achievements:** Key milestones.
