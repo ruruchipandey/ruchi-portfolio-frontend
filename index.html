@@ -20,65 +20,52 @@
   <div class="wrapper">
 
     <!-- ====================================================================
-         Header / Profile
+         Header / Profile Box
          ==================================================================== -->
-    <header class="profile-header">
+    <header class="profile-box">
       <div class="header-top">
         <div>
           <h1 class="profile-name">Ruchi Pandey</h1>
           <div class="profile-headline">Software Engineer &bull; M.Tech. Thermal Engineering, IIT Delhi</div>
         </div>
 
-        <button id="theme-toggle" class="theme-toggle-btn" type="button" aria-label="Toggle theme">
-          <span id="theme-label">🌙 Dark Mode</span>
+        <button onclick="window.print()" class="btn-print" type="button">
+          Print Resume
         </button>
       </div>
 
       <!-- Contact Bar -->
       <div class="profile-contacts">
-        <span class="contact-item">
-          📍 New Delhi, India
-        </span>
-        <span class="contact-item">
-          ✉️ <a href="mailto:ruchipandeytouka@gmail.com">ruchipandeytouka@gmail.com</a>
-        </span>
-        <span class="contact-item">
-          📞 <a href="tel:+919548936041">+91 9548936041</a>
-        </span>
-        <span class="contact-item">
-          💻 <a href="https://github.com/ruruchipandey" target="_blank" rel="noopener noreferrer">github.com/ruruchipandey</a>
-        </span>
-      </div>
-
-      <!-- Quick Actions for Recruiters -->
-      <div class="action-buttons">
-        <a href="mailto:ruchipandeytouka@gmail.com" class="btn btn-primary">
-          ✉️ Email Me
-        </a>
-        <button id="copy-email-btn" class="btn btn-outline" type="button">
-          📋 Copy Email
-        </button>
-        <button onclick="window.print()" class="btn btn-outline" type="button">
-          🖨️ Print / Save as PDF
-        </button>
+        <span class="contact-item">New Delhi, India</span>
+        <span class="contact-item">&bull;</span>
+        <span class="contact-item"><a href="mailto:ruchipandeytouka@gmail.com">ruchipandeytouka@gmail.com</a></span>
+        <span class="contact-item">&bull;</span>
+        <span class="contact-item"><a href="tel:+919548936041">+91 9548936041</a></span>
+        <span class="contact-item">&bull;</span>
+        <span class="contact-item"><a href="https://github.com/ruruchipandey" target="_blank" rel="noopener noreferrer">github.com/ruruchipandey</a></span>
       </div>
     </header>
 
     <!-- ====================================================================
-         About / Summary
+         About Box (Concise)
          ==================================================================== -->
-    <div class="summary-box">
-      <strong>Profile Summary:</strong> Software Engineer and graduate student pursuing <strong>M.Tech. in Thermal Engineering at IIT Delhi</strong> (admitted via <strong>GATE 2026, Score: 556</strong>), holding a B.Tech. from GBPUAT with the <strong>2nd highest CGPA (8.44/10)</strong>. Specialized in <strong>Python</strong>, <strong>FastAPI/Django backends</strong>, <strong>AI/LLM integrations</strong>, and <strong>Agentic Systems (MCP, tool calling, multi-agent orchestration)</strong> alongside numerical and scientific computing.
-    </div>
+    <section id="about">
+      <h2 class="section-heading">About</h2>
+      <div class="about-box">
+        <p class="about-text">
+          Software Engineer and M.Tech student at <strong>IIT Delhi</strong> (GATE 2026 Score: <strong>556</strong>). Graduated <strong>Rank 2</strong> in Mechanical Engineering from GBPUAT (<strong>8.44/10 CGPA</strong>). Specializing in <strong>Python backends (FastAPI)</strong>, <strong>LLM integrations</strong>, and <strong>Agentic Systems</strong> (MCP, multi-agent orchestration, tool calling).
+        </p>
+      </div>
+    </section>
 
     <!-- ====================================================================
-         Education
+         Education Boxes
          ==================================================================== -->
     <section id="education">
       <h2 class="section-heading">Education</h2>
 
       <!-- IIT Delhi -->
-      <div class="entry-card">
+      <div class="entry-box">
         <div class="entry-header">
           <div class="entry-title">Indian Institute of Technology Delhi (IIT Delhi)</div>
           <div class="entry-date">2026 – Present</div>
@@ -88,15 +75,15 @@
           <span class="entry-location">New Delhi, India</span>
         </div>
         <ul class="entry-list">
-          <li>Admitted through national-level GATE 2026 examination (ME Score: 556).</li>
-          <li>Focusing on thermal systems, fluid dynamics modeling, and scientific computation.</li>
+          <li>Admitted via GATE 2026 ME Examination (Score: 556).</li>
+          <li>Focus on thermal modeling, fluid dynamics, and numerical simulations.</li>
         </ul>
       </div>
 
       <!-- GBPUAT -->
-      <div class="entry-card">
+      <div class="entry-box">
         <div class="entry-header">
-          <div class="entry-title">GB Pant University of Agriculture & Technology (GBPUAT)</div>
+          <div class="entry-title">GB Pant University of Agriculture & Technology</div>
           <div class="entry-date">2022 – 2026</div>
         </div>
         <div class="entry-subtitle">
@@ -104,19 +91,19 @@
           <span class="entry-location">Pantnagar, Uttarakhand</span>
         </div>
         <ul class="entry-list">
-          <li><strong>Department Rank 2:</strong> Graduated with the second-highest CGPA in Mechanical Engineering.</li>
-          <li><strong>GATE 2026 ME Score: 556.</strong></li>
+          <li><strong>Rank 2:</strong> Second-highest CGPA across the Mechanical Engineering department.</li>
+          <li>GATE 2026 ME Score: 556.</li>
         </ul>
       </div>
     </section>
 
     <!-- ====================================================================
-         Technical Skills
+         Technical Skills Box
          ==================================================================== -->
     <section id="skills">
       <h2 class="section-heading">Technical Skills</h2>
 
-      <div class="skills-container">
+      <div class="skills-wrapper">
         <div class="skill-row">
           <div class="skill-label">Languages</div>
           <div class="skill-values">Python, SQL</div>
@@ -124,17 +111,17 @@
 
         <div class="skill-row">
           <div class="skill-label">AI / LLM Engineering</div>
-          <div class="skill-values">OpenAI API, LLM Integration, Prompt Engineering, Retrieval-Augmented Generation (RAG)</div>
+          <div class="skill-values">OpenAI API, LLM Integration, Prompt Engineering, RAG</div>
         </div>
 
         <div class="skill-row">
           <div class="skill-label">Agentic Systems</div>
-          <div class="skill-values">Agentic Workflows, Agent Orchestration, Multi-Agent Systems, Context Engineering, Persistent Memory, Model Context Protocol (MCP), Tool Calling</div>
+          <div class="skill-values">Agentic Workflows, Agent Orchestration, Multi-Agent Systems, Context Engineering, Persistent Memory, MCP, Tool Calling</div>
         </div>
 
         <div class="skill-row">
           <div class="skill-label">Backend & APIs</div>
-          <div class="skill-values">FastAPI, Django, RESTful APIs, Asynchronous Workflows</div>
+          <div class="skill-values">FastAPI, Django, REST APIs, Asynchronous Workflows</div>
         </div>
 
         <div class="skill-row">
@@ -155,95 +142,90 @@
     </section>
 
     <!-- ====================================================================
-         Software Projects
+         Software Projects Boxes (Concise)
          ==================================================================== -->
     <section id="projects">
       <h2 class="section-heading">Software Projects</h2>
 
       <!-- Project 1 -->
-      <div class="project-item">
+      <div class="project-box">
         <div class="project-head">
           <div class="project-name">LLM Discord Bot with OpenAI Integration</div>
-          <a href="https://github.com/ruruchipandey" target="_blank" rel="noopener noreferrer" style="font-size: 0.85rem;">View on GitHub &rarr;</a>
+          <a href="https://github.com/ruruchipandey" target="_blank" rel="noopener noreferrer" class="project-link">GitHub &rarr;</a>
         </div>
         <ul class="entry-list">
-          <li>Built an interactive Discord bot integrating an LLM through the <strong>OpenAI API</strong> for contextual conversations and automated responses.</li>
-          <li>Implemented Python-based message handling, API integration, custom command processing, and asynchronous event loops.</li>
+          <li>Integrated OpenAI API for real-time contextual interactions and automated responses.</li>
+          <li>Implemented asynchronous message handling, API integration, and custom command processing.</li>
         </ul>
         <div class="tech-tags">
           <span class="tag">Python</span>
           <span class="tag">OpenAI API</span>
           <span class="tag">Discord API</span>
           <span class="tag">Asyncio</span>
-          <span class="tag">Prompt Engineering</span>
         </div>
       </div>
 
       <!-- Project 2 -->
-      <div class="project-item">
+      <div class="project-box">
         <div class="project-head">
           <div class="project-name">Automated TA Attendance Tracker</div>
-          <a href="https://github.com/ruruchipandey" target="_blank" rel="noopener noreferrer" style="font-size: 0.85rem;">View on GitHub &rarr;</a>
+          <a href="https://github.com/ruruchipandey" target="_blank" rel="noopener noreferrer" class="project-link">GitHub &rarr;</a>
         </div>
         <ul class="entry-list">
-          <li>Developed an automated Python data pipeline to process attendance from both CSV files and raw image captures.</li>
-          <li>Leveraged <strong>Codex CLI</strong> to parse attendance images into structured CSV data for programmatic evaluation.</li>
-          <li>Automated aggregate attendance calculations, presence/absence classification, and student reporting.</li>
+          <li>Built a workflow to process attendance data from both CSV sheets and image captures.</li>
+          <li>Used Codex CLI to convert raw images into structured CSV data for automated reporting.</li>
         </ul>
         <div class="tech-tags">
           <span class="tag">Python</span>
           <span class="tag">Codex CLI</span>
           <span class="tag">Pandas</span>
-          <span class="tag">OCR / Vision</span>
-          <span class="tag">Data Automation</span>
+          <span class="tag">OCR</span>
         </div>
       </div>
 
       <!-- Project 3 -->
-      <div class="project-item">
+      <div class="project-box">
         <div class="project-head">
           <div class="project-name">Python Computational Fluid Mechanics</div>
-          <a href="https://github.com/ruruchipandey" target="_blank" rel="noopener noreferrer" style="font-size: 0.85rem;">View on GitHub &rarr;</a>
+          <a href="https://github.com/ruruchipandey" target="_blank" rel="noopener noreferrer" class="project-link">GitHub &rarr;</a>
         </div>
         <ul class="entry-list">
-          <li>Developed Python numerical simulation programs for streamlines, pathlines, streaklines, stream functions, and potential functions.</li>
-          <li>Utilized <strong>NumPy</strong> for vectorized matrix calculations and mathematical modeling.</li>
-          <li>Generated scientific contour plots and flow visualizations using <strong>Matplotlib</strong>.</li>
+          <li>Simulated streamlines, pathlines, streaklines, stream functions, and potential functions.</li>
+          <li>Vectorized numerical computations and flow visualizations with NumPy and Matplotlib.</li>
         </ul>
         <div class="tech-tags">
           <span class="tag">Python</span>
           <span class="tag">NumPy</span>
           <span class="tag">Matplotlib</span>
-          <span class="tag">Numerical Methods</span>
-          <span class="tag">Fluid Dynamics</span>
+          <span class="tag">Simulation</span>
         </div>
       </div>
     </section>
 
     <!-- ====================================================================
-         Experience
+         Experience Boxes (Concise)
          ==================================================================== -->
     <section id="experience">
       <h2 class="section-heading">Experience</h2>
 
       <!-- Teaching Assistant -->
-      <div class="entry-card">
+      <div class="entry-box">
         <div class="entry-header">
           <div class="entry-title">Teaching Assistant</div>
-          <div class="entry-date">Department of Mechanical Engineering</div>
+          <div class="entry-date">Mechanical Engineering</div>
         </div>
         <div class="entry-subtitle">
-          <span>Undergraduate Course Mentorship & Technical Evaluation</span>
+          <span>Undergraduate Course Mentorship</span>
         </div>
         <ul class="entry-list">
-          <li>Assisted undergraduate students with problem solving in thermodynamics, fluid mechanics, and engineering mathematics.</li>
-          <li>Prepared and reviewed comprehensive solution sets, answer keys, and technical explanations.</li>
-          <li>Developed automated course attendance workflows using Python and data-processing tools to streamline course operations.</li>
+          <li>Mentored undergraduate students in thermodynamics, fluid mechanics, and engineering math.</li>
+          <li>Prepared solution keys and technical explanations for course problem sets.</li>
+          <li>Automated course attendance tracking and data-processing workflows using Python.</li>
         </ul>
       </div>
 
       <!-- Design Thinking -->
-      <div class="entry-card">
+      <div class="entry-box">
         <div class="entry-header">
           <div class="entry-title">Design Thinking Workshop</div>
           <div class="entry-date">September 2025</div>
@@ -252,37 +234,37 @@
           <span>GBPUAT Pantnagar</span>
         </div>
         <ul class="entry-list">
-          <li>Applied structured problem identification, ideation, prototyping, testing, and evaluation to real-world engineering challenges.</li>
-          <li>Developed low-cost solutions considering user requirements, cost factors, materials, and manufacturing constraints.</li>
+          <li>Applied problem identification, ideation, and rapid prototyping to real-world engineering cases.</li>
+          <li>Engineered low-cost solutions considering user constraints, materials, and cost parameters.</li>
         </ul>
       </div>
     </section>
 
     <!-- ====================================================================
-         Achievements
+         Achievements Boxes
          ==================================================================== -->
     <section id="achievements">
       <h2 class="section-heading">Key Achievements</h2>
 
-      <div class="achievements-list">
-        <div class="achievement-pill">
-          <span class="achievement-icon">🏛️</span>
+      <div class="achievements-grid">
+        <div class="achievement-box">
+          <span class="achievement-bullet">&#9670;</span>
           <div>
-            <strong>M.Tech. Admission at IIT Delhi:</strong> Admitted to the prestigious Master of Technology program in Thermal Engineering at IIT Delhi.
+            <strong>M.Tech. Admission at IIT Delhi:</strong> Admitted to the M.Tech. program in Thermal Engineering.
           </div>
         </div>
 
-        <div class="achievement-pill">
-          <span class="achievement-icon">🎯</span>
+        <div class="achievement-box">
+          <span class="achievement-bullet">&#9670;</span>
           <div>
-            <strong>GATE 2026 Score 556:</strong> Achieved 556 ME score in Graduate Aptitude Test in Engineering.
+            <strong>GATE 2026 Score 556:</strong> Achieved score 556 in the Graduate Aptitude Test in Engineering (ME).
           </div>
         </div>
 
-        <div class="achievement-pill">
-          <span class="achievement-icon">🥈</span>
+        <div class="achievement-box">
+          <span class="achievement-bullet">&#9670;</span>
           <div>
-            <strong>Second-Highest CGPA (8.44 / 10):</strong> Ranked 2nd across the Mechanical Engineering department at GBPUAT Pantnagar.
+            <strong>Second-Highest CGPA (8.44 / 10):</strong> Ranked 2nd in the Department of Mechanical Engineering at GBPUAT.
           </div>
         </div>
       </div>
@@ -298,6 +280,5 @@
 
   </div>
 
-  <script src="js/main.js"></script>
 </body>
 </html>
