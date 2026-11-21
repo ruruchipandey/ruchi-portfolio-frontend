@@ -495,6 +495,7 @@ section {
   height: 100%;
   background-color: #1a1c22;
   position: relative;
+  overflow: hidden;
 }
 
 .pdf-modal-body iframe {

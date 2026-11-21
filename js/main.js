@@ -4,11 +4,7 @@
 
 window.openResumePreview = function() {
   const modal = document.getElementById('pdf-modal');
-  const iframe = document.getElementById('pdf-iframe');
   if (modal) {
-    if (iframe && (!iframe.src || iframe.src === '' || iframe.src === window.location.href)) {
-      iframe.src = 'assets/Resume.pdf';
-    }
     modal.classList.add('open');
     modal.setAttribute('aria-hidden', 'false');
     document.body.style.overflow = 'hidden';
@@ -34,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // Visual feedback when Download Resume is selected
+  // Subtle feedback when Download Resume is clicked
   if (downloadBtn) {
     downloadBtn.addEventListener('click', () => {
       const originalText = downloadBtn.textContent;
